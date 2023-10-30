@@ -1,0 +1,463 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+
+    /* section About css starts */
+    .section-about{
+        margin:auto;
+    }
+    .section-about-md {
+        max-width: 720px;
+        padding-bottom: 20px;
+    }
+    .section-about-lg {
+        max-width: 960px;
+    }
+    .section-about-xl {
+        max-width: 1140px;
+    }
+    #accordion{
+        color:#032146;
+    }
+    .panel-heading{
+        margin: auto;
+        position: relative;
+    }
+    .panel-title{
+        font-size: 16px;
+        margin: 12px auto;
+        padding:0 12px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .section-about-md .panel-title{
+        font-size: 1.25rem;
+        margin: 20px auto 0px;
+        font-weight: 700;
+      }
+    .accordion-toggle-collapse::after{
+        background: url("../../../public/assets/images/main-body/home/minus-solid-navy.svg")no-repeat;
+        height: 7px;
+        top: 6px;
+        background-size: 16px !important;
+        width: 16px;
+        float: right;
+        position: absolute;
+        transition: transform .2s;
+        content: '';
+        display: block;
+        right: 12px;
+    
+    }
+    .accordion-toggle::after{
+        content: " ";
+        background-size: 16px !important;
+        height: 17px;
+        width: 16px;
+        float: right;
+        position: absolute;
+        transition: transform .2s;
+        content: '';
+        display: block;
+        right: 12px;
+        background: url('../../../public/assets/images/main-body/home/plus-solid-navy.svg') no-repeat;
+    }
+
+    .section-about-sm .accordion-toggle::after {
+        top:2px;
+    }
+    
+    .section-about-md .accordion-toggle::after {
+        top:5px;
+    }
+    
+    .section-about-lg .accordion-toggle::after {
+        top:5px;
+    }
+
+    .section-about-sm .accordion-toggle-collapse::after {
+        top:8px;
+    }
+    
+    .section-about-md .accordion-toggle-collapse::after {
+        top:11px;
+    }
+    
+    .section-about-lg .accordion-toggle-collapse::after {
+        top:11px;
+    }
+    
+    .about_h3{
+        font-size: 16px;
+        padding-bottom: 5px;
+        padding-top: 0px;
+    }
+    .section-about-md .about_h3{
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+    .panel-body p{
+        margin-bottom: 10px;
+        font-size: 0.75rem;;
+    }
+    .section-about-md .panel-body p{
+        font-size: 14px;;
+    }
+    .section-about .panel-body .my-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-about-md .panel-body .my-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .section-about .moretext h2{
+        font-size: 15px;
+        padding-bottom: 8px;
+        margin-top: 15px;
+        color:#032146;
+        font-weight: 700;
+    }
+    .section-about-md .moretext h2{
+        margin-top:0px;
+        padding-top: 15px;
+      }
+    .section-about .activeToggle{
+        max-height: 9000px;
+        transition: max-height 0.40s ease-in;
+    }
+    .section-about-md .activeToggle{
+        max-height: 4000px;
+    }
+    .section-about .inActiveToggle{
+        max-height: 0px;
+        transition: max-height 0.40s ease-out;
+        overflow: hidden;  
+    }
+    .section-about .moretext p{
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+    }
+    .section-about-md .moretext p{
+        font-size: 14px;
+    }
+    .moretext a{
+        color:#E9BF69;
+    }
+
+     /* section About css starts */
+
+
+    /* payment security css starts */
+    .payment-security{
+        background-color: #F2F2F2;
+        overflow: hidden;
+        border-bottom: 1px solid var(--standard-grey, #BABABA);
+    }
+    .payment-security .section-heading {
+        text-align: center;
+        color: #000;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    .payment-security-lg .section-heading{
+        text-align: center;
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 700;
+        
+    }
+    .payment-security .both-side-border::before{
+        position: absolute;
+        content: '';
+        height: 1px;
+        background: linear-gradient(90deg, #3A4C71 0%, rgba(58, 76, 113, 0) 100%);
+        top: 50%;
+        width: 68.5px;;
+        left: -80px;
+    }
+    .payment-security .both-side-border::after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        background: linear-gradient(90deg, rgba(58, 76, 113, 0) 0%, #3A4C71 100%);
+        top: 50%;
+        width: 68.5px;;
+        right: -80px;
+    }
+    .payment-security-lg .both-side-border::before{
+        width: 360px;
+        left: -360px;
+    }
+    .payment-security-lg .both-side-border::after {
+        width: 360px;
+        right: -360px;
+    }
+    .payment-security .sub-heading {
+        padding-top: 16px;
+        font-size: 0.75rem;
+        margin-bottom: 8px;
+        color: #032146;
+        font-weight: 700;
+    }
+    .payment-security-lg .sub-heading{
+        padding-top: 20px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .payment-security .mycontainer{
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+    }
+    .payment-security-md .mycontainer{
+        max-width: 720px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+     }
+    .payment-security-lg .mycontainer{
+        max-width: 920px;
+     }
+    .payment-security .digicert-logo {
+        width: 82px;
+        height: 22px;
+    }
+    .payment-security .egf_img {
+        width: 108px;
+        height: 21px;
+    }
+    .payment-security .plus_18 {
+        width: 28px;
+        height: 28px;
+        margin-right: 15px;
+    }
+    .payment-security .respo_icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 15px;
+    }
+    .payment-security .itech_img {
+        width: 28px;
+        height: 28px;
+        margin-right: 15px;
+    }
+    .payment-security .fifs_silver {
+        width: 28px;
+        height: 28px;
+        margin-right: 15px;
+    }
+    .payment-security-md .digicert-logo{
+        width: 82px;
+        height: 22px;
+    }
+    .payment-security-md .egf_img{
+        width: 108px;
+        height: 21px;
+    }
+    .payment-security-md .plus_18{
+        width: 28px;
+        height: 28px;
+    }
+    .payment-security-md .respo_icon{
+        width: 32px;
+        height: 32px;
+    }
+    .payment-security-md .itech_img{
+        width: 28px;
+        height: 28px;
+    }
+    .payment-security-md .fifs_silver{
+        width: 28px;
+        height: 28px;
+    }
+    .payment-security .payments_div_1 {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .payment-security .payments_div_3{
+        overflow-x: auto;
+        width: 300px;
+    }
+    .payment-security-md .payments_div_3{
+        width: 100%;
+    }
+    .payment-security .certificates{
+        width: 100%;
+        padding:0 15px;
+    }
+    .payment-security-md .certificates{
+        width: 50%;
+    }
+    .payment-security .payments{
+        width: 100%;
+        padding:0 15px;
+    }
+    .payment-security-md .payments{
+        width: 50%;
+    }
+    /* payment security css ends */
+
+
+    /* quicklinks css starts */
+    .quick-links{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #223655;
+        border-top: 0 solid;
+        padding: 16px 0 16px;
+    }
+    
+    .quick-links .container{
+        max-width: 1140px;
+        margin: auto;
+        padding: 0 15px;
+    }
+    .quick-links-md .container{
+        max-width: 720px;
+        padding:0px;
+    }
+    .quick-links-lg .container{
+        max-width: 960px
+    }
+    .quick-links-xl .container{
+        max-width: 1140px;
+    }
+    .quick-links .underline-class::after {
+        text-decoration: none;
+        background: linear-gradient(90deg, #BABABA 0%, rgba(186, 186, 186, 0) 100%);
+        height: 2px;
+        bottom: 5px;
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .quick-links .section-heading {
+        padding-bottom: 8px;
+        color: #fff;
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+    .quick-links-md .section-heading{
+        font-size: 1.25rem
+    }
+    .quicklinks-disclosure{
+        display: flex;
+        flex-direction: column;
+    }
+    .quicklinks-disclosure-md {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .quicklinks-disclosure .mycontainer{
+        width: 100%;
+    }
+    .quicklinks-disclosure-md .mycontainer{
+        width: 49%;
+        margin:20px 0;
+    }
+    .quicklinks-disclosure .quicklinks-item{
+        border-bottom: 1px solid #435c79;
+    }
+    .quicklinks-disclosure .quicklinks-item-lastchild:not(:last-child){
+        border-bottom: 1px solid #435c79;
+    }
+    .quicklinks-disclosure-md .quicklinks-item-lastchild-md:not(:last-child){
+        border-bottom: 1px solid #435c79;
+    }
+    .quicklinks-disclosure .disclosure-button{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+        padding:12px 0px;
+        border:none;
+        background:transparent;
+        color:white;
+    }
+    .quicklinks-disclosure .title{
+        font-weight: 500;
+        font-size: 1rem;
+        color: #91CFDE;
+        text-align: left;
+        margin-right: 0.5rem;
+    }
+    .quicklinks-disclosure img{
+        width:12px;
+        height:8px;
+    }
+    .quicklinks-disclosure .disclosure-panel{
+        color:white;
+        font-size:1rem;
+        padding:10px 16px;
+    }
+    .quicklinks-disclosure .disclosure-active{
+        max-height: 1000px;
+        transition: max-height 0.90s ease-in;
+    }
+    .quicklinks-disclosure .disclosure-inactive{
+        max-height: 0px;
+        transition: max-height 0.30s ease-out;
+        overflow: hidden;  
+    }
+    /* quicklinks css ends */
+
+
+    /* main footer css starts */
+    .main-footer .footer{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #223655 !important;
+        color: #fff;
+        border-top: 1px solid #bababa80;
+        margin-top: 0;
+        width: 100%;
+    }
+    .main-footer .hdworks-div{
+        font-size: 1rem;
+        text-align: left;
+        padding: 16px 15px 0 15px;
+    }
+    .main-footer-md .hdworks-div{
+        text-align: center;
+        max-width: 720px;
+        font-size: 0.875rem;
+        margin:auto;
+        padding: 16px 0 0 0;
+    }
+    .main-footer-lg .hdworks-div{
+        max-width: 1140px;
+    }
+    .main-footer .footer-links{
+        padding-top: 12px;
+        padding-bottom: 16px;
+        max-width: 540px;
+        margin: auto;
+        padding: 12px 15px 16px 15px; 
+    }
+    .main-footer .footer-links ul li .circle-dott {
+        background-color: #91CFDE;
+        width: 2px;
+        height: 2px;
+    }
+    .main-footer .footer-links .mycontainer{
+        font-size: 0.75rem;
+        max-width: 343px;
+        color: #91CFDE;
+        margin: auto;
+    }
+    .main-footer-md .footer-links .mycontainer{
+        max-width: 452px;
+        font-size: 0.875rem;
+    }
+    .main-footer-lg .footer-links .mycontainer{
+        font-size: 1rem;
+    }
+    /* main footer css ends */
+
+}

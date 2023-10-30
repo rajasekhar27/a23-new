@@ -1,0 +1,30 @@
+.floating-download {
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    box-shadow: #0000008a 0 0 7px;
+    border-radius: 15px 15px 0 0;
+}
+
+.btn-download-a23 {
+    border: 2px solid #52b16b;
+    border-radius: 7px;
+    width: 100%;
+    max-width: 235px;
+    color: #fff;
+    font-size: 18px;
+    background: linear-gradient(180deg, #35A753 0%, #276E3A 100%);
+    padding: 10px 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.donwload_icon_width {
+    margin-right: 4px;
+    margin-top: -4px;
+}

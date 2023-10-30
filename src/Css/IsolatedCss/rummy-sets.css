@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .rummy-sets{
+        color:#092b54;
+        padding:16px 0;
+    }
+    .rummy-sets-md{
+        padding:32px 0;
+    }
+    .rummy-sets .my-container{
+        padding: 0 15px;
+    }
+    .rummy-sets-md .my-container{
+        width: 720px;
+        margin: auto;
+    }
+    .rummy-sets-lg .my-container{
+        width: 960px;
+    }
+    .rummy-sets-xl .my-container{
+        width: 1140px;
+        
+    }
+    .rummy-sets h1{
+        font-size: 1rem;
+        font-weight: 600;
+        margin:0px 0 10px;
+    }
+    .rummy-sets h2{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 15px 0 10px;
+    }
+    .rummy-sets h3{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .rummy-sets p{
+        margin: 0 0 10px;
+        font-size: 0.875rem;
+    }
+    .rummy-sets a{
+        color: #007bff;
+    }
+    .rummy-sets .listicon{
+        list-style-type: disc;
+        margin: 0 0 15px 15px;
+        line-height: 22px;
+        font-size: 0.875rem;
+    }
+    .rummy-sets .listicon li{
+        padding: 3px;
+    }
+    .rummy-sets .listicon li::marker{
+        font-size: 1.15rem;
+        color: #eabf69;
+        vertical-align: middle;
+     }
+}

@@ -1,0 +1,765 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+
+    /* breadcrumb css starts */
+    .top-breadcrumb{
+        padding-top: 60px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #032146;
+    }
+    .top-breadcrumb-md{
+        padding-top: 64px;
+    }
+    .top-breadcrumb-md .my-container{
+        max-width: 720px;
+    }
+    .top-breadcrumb-lg .my-container{
+        max-width: 960px;
+    }
+    .top-breadcrumb-xl .my-container{
+        max-width: 1140px;
+    }
+    .top-breadcrumb .breadcrumb{
+        color:white;
+        display: flex;
+        align-items: center;
+        font-size:0.75rem;
+        padding: 0 14px 10.5px;
+    }
+    .top-breadcrumb-md .breadcrumb{
+        font-size:1rem;
+        padding: 0 14px 16px;
+    }
+    .top-breadcrumb-lg .breadcrumb{
+        padding: 0 14px 18px;
+    }
+    .top-breadcrumb .active {
+        color: #6c757d;
+    }
+    .top-breadcrumb .underline{
+        text-underline-offset: 0.3em;
+    }
+    .top-breadcrumb .inactive:after {
+        display:inline-block;
+        content:url('../../../public/assets/images/common/angle-right.svg');
+        vertical-align:text-top;
+        padding:0 12px;
+    }
+    .top-breadcrumb-md .inactive::after{
+        padding:0 20px;
+        font-size: 20px;
+        vertical-align:middle;
+    }
+     /* breadcrumb css ends */
+
+
+    /* top banner css starts*/
+    .top-banner{
+        background-color: #060b1d;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* top banner css ends*/
+
+
+    /* accomplishment-cares-css starts */
+    .accomplishment-cares {
+        padding: 16px 0;
+        background-color: #F2F2F2;
+        overflow: hidden;
+        border-bottom: 1px solid var(--standard-grey, #BABABA);
+    }
+    .accomplishment-cares-md{
+        padding: 32px 0;
+    }
+    .accomplishment-cares .section-heading {
+        text-align: center;
+        color: #000;
+        font-size:0.875rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .accomplishment-cares-md .section-heading{
+        text-align: center;
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .accomplishment-cares .both-side-border::before{
+        position: absolute;
+        content: '';
+        height: 1px;
+        background: linear-gradient(90deg, #3A4C71 0%, rgba(58, 76, 113, 0) 100%);
+        top: 50%;
+        width: 86px;
+        left: -100px;
+    }
+    .accomplishment-cares .both-side-border::after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        background: linear-gradient(90deg, rgba(58, 76, 113, 0) 0%, #3A4C71 100%);
+        top: 50%;
+        width: 86px;
+        right: -100px;
+    }
+    .accomplishment-cares-md .both-side-border::before{
+        width: 28.8177vw;
+        left: -280px;
+    }
+    .accomplishment-cares-md .both-side-border::after {
+        width: 28.8177vw;
+        right: -280px;
+    }
+    .accomplishment-cares-lg .both-side-border::before{
+        width: 28.5vw;
+        left: -30.28125vw;
+    }
+    .accomplishment-cares-lg .both-side-border::after {
+        width: 28.5vw;
+        right: -30.28125vw;
+    }
+    .accomplishment .big{
+        font-size: 0.6875rem;
+        font-weight: 700;
+        margin-top: 8px;
+    }
+    .accomplishment-md .big{
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+    .accomplishment .text{
+        font-size: 0.6875rem;
+        font-weight: 400;
+    }
+    .accomplishment-md .text{
+        font-size: 1rem;
+    }
+    .app-downloading .mybtn-success{
+        background: linear-gradient(180deg, #35A753 0%, #276E3A 100%);
+    }
+    .app-downloading .mybtn{
+        padding: 8px 16px;
+        gap: 8px;
+    }
+    .app-downloading .btn-radius {
+        border-radius: 4px;
+    }
+    .app-downloading .text-container{
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+    .get-app-link{
+        padding-top: 20px;
+    }
+    .get-app-link .input-group{
+        height: 48px;
+        max-width: 365px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .get-app-link .input-group .country-code{
+        background-color: #BABABA;
+        padding: 12px;
+        border-radius: 8px 0px 0px 8px;
+        font-size: 1rem;
+    }
+    .get-app-link .input-group input{
+        padding: 23px 12px;
+        font-size: 1rem;
+        border-top: 1px solid #9C9D9F;
+        border-bottom: 1px solid #9C9D9F;
+        border-left: 1px solid #9C9D9F;
+        height: 100%;
+        color: #032146;
+    }
+    .get-app-link .input-group .form-control{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .get-app-link .input-group .my-btn-success{
+        border-radius: 0px 8px 8px 0px;
+        background: linear-gradient(180deg, #35A753 0%, #276E3A 100%);
+        padding: 12px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+        border: none;
+    }
+    .ribbon-shade{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 20px;
+        max-width: 336px;
+        background: linear-gradient(90deg, #F2F2F2 0%, #BABABA 49.48%, #F2F2F2 97.40%);
+    }
+    .ribbon-shade .text{
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+    .ribbon-shade .link{
+        color: #196A29;
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+    .ribbon-shade .text-md{
+        font-size: 1rem;
+    }
+    .ribbon-shade .link-md{
+        font-size: 1rem;
+    }
+    /* accomplishment-cares-css ends */
+
+
+    /* game intro css starts */
+    .game-intro{
+        padding:16px 0;
+    }
+    .game-intro-md{
+        padding:32px 0;
+    }
+    .game-intro .container{
+        width: 100%;
+        padding: 0 15px;
+        margin:0 auto;
+    }
+    .game-intro .my-container{
+        max-width: 800px;
+    }
+    .game-intro-md .my-container{
+        max-width: 534px;
+    }
+    .game-intro-lg .my-container{
+        max-width: 800px;
+    }
+    .game-intro .section-title .section-heading{
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .game-intro-md .section-title .section-heading{
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    .game-intro .section-body{
+        padding-top: 3px;
+    }
+    .game-intro .section-body .description{
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+    .game-intro-md .section-body .description{
+        font-size: 1rem;
+    }
+    .game-intro .section-body .description-footer {
+        padding-top: 10px;
+    }
+    .game-intro-md .section-body .description-footer {
+        padding-top: 20px;
+    }
+    .game-intro .section-body .description-footer .read-more {
+        font-weight: 700;
+        color: #007bff;
+        font-size: 9.625px;
+        text-decoration: none;
+    }
+    .game-intro .section-body .description-footer .read-more:hover{
+        color: #0056b3;
+    }
+    .game-intro-md .section-body .description-footer .read-more{
+        font-size: 0.875rem;
+    }
+    .game-intro .section-body .description-footer .read-more.underline::after {
+        background-color: #032146;
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+    }
+
+    /* rummy-video-player starts */
+    .game-intro .section-body .embeded-video {
+        padding-top: 14px;
+    }
+    .game-intro-md .section-body .embeded-video{
+        padding-top: 20px;
+    }
+    .rummy-player{
+        background-color: #000;
+        height: 200px;
+        width: 100%;
+        border-radius:2px;
+    }
+    .rummy-player-md{
+        height: 200px;
+        border-radius:4px;
+    }
+    .rummy-player-lg{
+        height: 350px;
+        width: 700px;
+        border-radius:4px;
+        margin: auto;
+    }
+    /* rummy-video-player ends */
+
+
+    /* rummy-tabs-group starts */
+    .game-intro .section-body .scrollable-tab{
+        padding-top: 7px;
+    }
+    .game-intro-lg .section-body .scrollable-tab{
+        padding-top: 15px;
+    }
+    .tab-group .tab:focus{
+        border:0 !important;
+        outline:none !important;
+        box-shadow: none !important;
+    }
+    .tab-group .tab{
+        border:0
+    }
+    .tab-group .tab-list{
+        background-color:#F2F2F2;
+        border-bottom :1px solid #032146;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        border-radius: 0.25rem;
+        overflow-x: auto;
+    
+    }
+    .tab-group .tab-title-style{
+        font-size: 0.6875rem;
+        font-weight: 700;
+    }
+    .tab-group-lg .tab-title-style{
+        font-size: 0.875rem;
+    }
+    .tab-group .tab-content{
+        font-size:0.75rem;
+        font-weight: 500;
+    }
+    .tab-group-md .tab-content{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .tab-group .activeTab{
+        border:0;
+        border-bottom:2px solid #032146;
+        height: 100%;
+        width: 100%;
+        padding:15px 10px;
+    }
+    .tab-group .inActiveTab{
+        border:0;
+        height: 100%;
+        width: 100%;
+        padding:15px 10px;
+    }
+    /* rummy-tabs-group ends */
+    /* game intro css ends */
+
+
+    /* rummy-various-tourneys css starts */
+    .live-tourney .various-tourney-container{
+        padding:16px 0;
+    }
+    .live-tourney-md .various-tourney-container{
+        padding:32px 0;
+    }
+    .live-tourney .underline-class::after {
+        text-decoration: none;
+        background: linear-gradient(90deg, #BABABA 0%, rgba(186, 186, 186, 0) 100%);
+        height: 2px;
+        bottom: -3px;
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .live-tourney-sm .section-title {
+        padding-left:16px;
+        padding-right:16px;
+    }
+    
+    .live-tourney-md .section-title {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    
+    .live-tourney .section-heading {
+        padding-bottom: 8px;
+        color: #fff;
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+    .live-tourney-md .section-heading{
+        font-size: 1.25rem;
+    }
+    .live-tourney .btn-bg-view {
+        font-size:0.75rem;
+        font-weight: 700;
+        border: 1px solid #fff;
+        color: #fff;
+        min-width: 140px;
+        padding: 8px 24px;
+    }
+    .live-tourney-md .btn-bg-view{
+        min-width: 240px;
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .live-tourney-lg .btn-bg-view{
+        min-width: 240px;
+        font-size: 15.75px;
+        padding: 12px 32px;
+    }
+    .live-tourney .btn-radius {
+        border-radius: 4px;
+    }
+    .tourney-container{
+        max-width: 90vw;
+        margin:14px auto 0px ;
+    }
+    .tourney-container-md{
+        max-width: 720px;
+        margin:19px auto 0px ;
+    }
+    .tourney-container-lg{
+        max-width: 888px;
+    }
+    .tourney-container .tourney-image-container{
+        width:100%;
+        padding: 0 8px;
+    }
+    .tourney-container .tourney-image{
+        object-fit:cover;
+        border-radius:10px;
+        width: 280px;
+        height: 100%;
+    }
+    /* rummy-various-tourneys css ends */
+
+     
+    /* what our gamers says css starts */
+    .gamer-speak {
+        background-color: #F2F2F2;
+        overflow: hidden;
+        border-bottom: 1px solid var(--standard-grey, #BABABA);
+        padding:16px 0;
+    }
+    .gamer-speak-md{
+        padding:32px 0;
+    }
+    .gamer-speak-lg{
+        padding:16px 0;
+    }
+    .gamer-speak .section-heading {
+        text-align: center;
+        color: #000;
+        font-size:0.875rem;
+        font-weight: 600;
+    }
+    .gamer-speak-md .section-heading{
+        text-align: center;
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+    .gamer-speak .both-side-border::before{
+        position: absolute;
+        content: '';
+        height: 1px;
+        background: linear-gradient(90deg, #3A4C71 0%, rgba(58, 76, 113, 0) 100%);
+        top: 50%;
+        width: 86px;
+        left: -100px;
+    }
+    .gamer-speak .both-side-border::after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        background: linear-gradient(90deg, rgba(58, 76, 113, 0) 0%, #3A4C71 100%);
+        top: 50%;
+        width: 86px;
+        right: -100px;
+    }
+    .gamer-speak-md .both-side-border::before{
+        width: 29.8177vw;
+        left: -240px;
+    }
+    .gamer-speak-md .both-side-border::after {
+        width: 29.8177vw;
+        right: -240px;
+    }
+    .gamer-speak-lg .both-side-border::before{
+        width: 37.5vw;
+        left: -38.28125vw;
+    }
+    .gamer-speak-lg .both-side-border::after {
+        width: 37.5vw;
+        right: -38.28125vw;
+    }
+    .gamer-speak .btn-bg-view{
+        font-size:0.75rem;
+        font-weight: 700;
+        border:1px solid #032146;
+        color: #032146;
+        padding: 8px 40px;
+        border-radius: 4px;
+        min-width: 140px;
+    }
+    .gamer-speak-md .btn-bg-view{
+        min-width: 240px;
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .gamer-speak-lg .btn-bg-view{
+        font-size: 15.75px;
+        padding: 12px 32px;
+    }
+    .our-gamer-say{
+        max-width: 90vw;
+        margin:12px auto 0px;
+    }
+    .our-gamer-say-md{
+        max-width: 720px;
+        margin:20px auto 0px;
+    }
+    .our-gamer-say-lg{
+        max-width: 960px;
+    }
+    .our-gamer-say-xl{
+        max-width: 1140px;
+    }
+    .our-gamer-say .gamer-say-block{
+        width: 100%;
+        max-width: 540px;
+        padding: 0 10px;
+        margin: auto;
+    }
+    .our-gamer-say-lg .gamer-say-block{
+        width: 100%;
+        padding: 0 8px;
+    }
+    .our-gamer-say .gamer{
+        background:#053863;
+        width: 100%;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        gap:10px;
+        border-radius: 8px;
+    }
+    .our-gamer-say-md .gamer{
+        width: 100%;
+        min-height: 189px;
+        padding: 0 20px;    
+    }
+    .our-gamer-say-lg .gamer{
+        min-height: 194px;
+        width: 100%;
+    }
+    .our-gamer-say .gamecard-image{
+        height:100px;
+        width:100px;
+        object-fit:cover;
+    }
+    .our-gamer-say-md .gamecard-image{
+        height:112px;
+        width:112px;
+    }
+    .our-gamer-say .gamecard-title{
+        margin:0px;
+        font-weight:700;
+        color:white;
+        font-size:0.875rem;
+        margin-bottom: 7px;
+    }
+    .our-gamer-say-md .gamecard-title{
+        font-size:15.75px;
+        margin-bottom: 7px;
+    }
+    .our-gamer-say-lg .gamecard-title{
+        font-size:19.25px;
+    }
+    .our-gamer-say .comment-tag-line{
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #EABF69;
+    }
+    .our-gamer-say-md .comment-tag-line{
+        font-size: 1rem;
+    }
+    .our-gamer-say-lg .comment-tag-line{
+        font-size: 15.75px;
+    }
+    .our-gamer-say .gamecard-description{
+        color:white;
+        padding-top:10px;
+        font-size:9.625px;
+    }
+    .our-gamer-say-md .gamecard-description{
+        font-size:0.875rem;
+    }
+    .our-gamer-say-lg .gamecard-description{
+        font-size:1rem;
+    }
+    /* what our gamers says css ends */
+
+
+    /* faqs css starts */
+    .faqs{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), radial-gradient(50% 50.00% at 50% 50.00%, rgba(34, 54, 85, 0.75) 0%, #223655 100%);
+        border-top: 0 solid;
+        padding: 16px 0 16px;
+    }
+    .faqs .container{
+        max-width: 1140px;
+        margin: auto;
+        padding: 0 15px;
+    }
+    .faqs-md .container{
+        max-width: 720px;
+        padding:0px;
+    }
+    .faqs-lg .container{
+        max-width: 960px
+    }
+    .faqs-xl .container{
+        max-width: 1140px;
+    }
+    .faqs .underline-class::after {
+        text-decoration: none;
+        background: linear-gradient(90deg, #BABABA 0%, rgba(186, 186, 186, 0) 100%);
+        height: 2px;
+        bottom: 5px;
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .faqs .section-heading {
+        padding-bottom: 8px;
+        color: #fff;
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+    .faqs-md .section-heading{
+        font-size:1.25rem;
+    }
+    .faqs-disclosure{
+        display: flex;
+        flex-direction: column;
+    }
+    .faqs-disclosure-md{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .faqs-disclosure .mycontainer{
+        width: 100%;
+    }
+    .faqs-disclosure-md .mycontainer{
+        width: 49%;
+        margin:20px 0;
+    }
+    .faqs-disclosure .faqs-item{
+        border-bottom:1px solid #BABABA;
+    }
+    .faqs-disclosure .faqs-item-lastchild:not(:last-child){
+        border-bottom:1px solid #BABABA;
+    }
+    .faqs-disclosure-md .faqs-item-lastchild-md:not(:last-child){
+        border-bottom:1px solid #BABABA;
+    }
+    .faqs-disclosure .disclosure-button{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+        padding:12px 0px;
+        border:none;
+        background:transparent;
+        color:white;
+    }
+    .faqs-disclosure .title{
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: left;
+        margin-right: 0.5rem;
+    }
+    .faqs-disclosure img{
+        width:12px;
+        height:8px;
+    }
+    .faqs-disclosure .disclosure-panel{
+        color:white;
+        padding:10px 16px;
+        font-size:1rem;
+    }
+    .faqs-disclosure .disclosure-active{
+        max-height: 2000px;
+        transition: max-height 0.30s ease-in;
+    }
+    .faqs-disclosure .disclosure-inactive{
+        max-height: 0px;
+        transition: max-height 0.40s ease-out;
+        overflow: hidden;  
+    }
+    /* faqs css ends */
+
+
+    /* alice-carousel-common-css starts*/
+        .our-gamer-say div.alice-carousel > ul.alice-carousel__dots{
+            margin-top: 15px;
+        }
+        .our-gamer-say .alice-carousel__dots-item.__active {
+            height: 10px !important;
+            width: 10px !important;
+            background: #e6bc68 !important;
+            border: 1px solid gray !important;
+        }
+        .our-gamer-say .alice-carousel__dots-item {
+            margin-right: 10px !important;
+            height: 10px !important;
+            width: 10px !important;
+            background: none !important;
+            border: 1px solid gray !important;
+        }
+
+        
+        .tourney-container div.alice-carousel > ul.alice-carousel__dots{
+            margin-top: 15px;
+        }
+        .tourney-container .alice-carousel__dots-item.__active {
+            height: 10px !important;
+            width: 10px !important;
+            background: #e6bc68 !important;
+            border: 1px solid gray !important;
+        }
+        .tourney-container .alice-carousel__dots-item {
+            margin-right: 10px !important;
+            height: 10px !important;
+            width: 10px !important;
+            background: none !important;
+            border: 1px solid gray !important;
+        }
+
+         /* alice-carousel-common-css ends */
+
+}

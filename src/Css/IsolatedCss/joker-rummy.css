@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .joker-rummy{
+        color:#092b54;
+        padding:16px 0;
+    }
+    .joker-rummy-md{
+        padding:32px 0;
+    }
+    .joker-rummy .my-container{
+        padding: 0 15px;
+    }
+    .joker-rummy-md .my-container{
+        width: 720px;
+        margin: auto;
+    }
+    .joker-rummy-lg .my-container{
+        width: 960px;
+    }
+    .joker-rummy-xl .my-container{
+        width: 1140px;
+        
+    }
+    .joker-rummy h1{
+        font-size: 1rem;
+        font-weight: 600;
+        margin:0px 0 10px;
+    }
+    .joker-rummy h2{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 15px 0 10px;
+    }
+    .joker-rummy h3{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .joker-rummy p{
+        margin: 0 0 10px;
+        font-size: 0.875rem;
+    }
+    .joker-rummy a{
+        color: #007bff;
+    }
+    .joker-rummy .listicon{
+        list-style-type: disc;
+        margin: 0 0 15px 15px;
+        line-height: 22px;
+        font-size: 0.875rem;
+    }
+    .joker-rummy .listicon li{
+        padding: 3px;
+    }
+    .joker-rummy .listicon li::marker{
+        font-size: 1.15rem;
+        color: #eabf69;
+        vertical-align: middle;
+     }
+}

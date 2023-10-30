@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .rules-section{
+        color:#092b54;
+        padding:16px 0;
+    }
+    .rules-section-md{
+        padding:32px 0;
+    }
+    .rules-section .my-container{
+        padding: 0 15px;
+    }
+    .rules-section-md .my-container{
+        width: 720px;
+        margin: auto;
+    }
+    .rules-section-lg .my-container{
+        width: 960px;
+    }
+    .rules-section-xl .my-container{
+        width: 1140px;
+        
+    }
+    .rules-section h1{
+        font-size: 1rem;
+        font-weight: 700;
+        margin:10px 0;
+    }
+    .rules-section h2{
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin: 15px 0 10px;
+        color: #0A2144;
+    }
+    .rules-section h3{
+        font-size: 0.938rem;
+        font-weight: 600;
+        margin:10px 0 10px;
+    }
+    .rules-section p{
+        margin-bottom: 10px;
+        font-size: 0.875rem;
+    }
+    .rules-section .listicon{
+        list-style-type: disc;
+        margin: 0 0 15px 15px;
+        line-height: 22px;
+        font-size: 0.875rem;
+    }
+    .rules-section .listicon li{
+        padding: 3px;
+    }
+    .rules-section .listicon li::marker{
+        font-size: 1.15rem;
+        color: #eabf69;
+        vertical-align: middle;
+     }
+     .rules-section a{
+        color: #007bff;
+    }
+    .rules-section .aboutrummy_inner_con.about_img_inner {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rules-section .about_img_inner img {
+        margin-bottom: 15px;
+    }
+    .rules-section .aboutrummy_inner_con{
+        font-size: 0.875rem;
+    }
+}

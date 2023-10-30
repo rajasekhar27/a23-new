@@ -1,0 +1,24 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin:0;
+  font-family: conto-regular !important;
+}
+
+.about-company ul {
+  list-style: none;
+}
+.about-company ul li::before {
+  content: '\2022';
+  color: #ffc107;
+}
+
+
+.item{
+  background-color: aquamarine;
+  height:200px;
+  width:auto;
+}

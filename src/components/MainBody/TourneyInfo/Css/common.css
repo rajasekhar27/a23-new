@@ -1,0 +1,40 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .tourney-tab-group .tab-list{
+        max-width: auto;
+        margin: auto;
+    }
+    .tourney-tab-group .tab-panel{
+        max-width:auto;
+        margin:auto;
+    }
+    .tab:focus{
+        border:0 !important;
+        outline:none !important;
+        box-shadow: none !important;
+    }
+    .tab{
+        border:0
+    }
+    .activeTab{
+        border:0;
+        border-bottom:4px solid #032146;
+        height: 100%;
+        width: 100%;
+        color: #032146;
+        font-weight: 700;
+    }
+    .inActiveTab{
+        border:0;
+        height: 100%;
+        width: 100%;
+    }
+    .tab-title-style{
+        font-size: 0.8125rem;
+        padding:12px;
+    }
+}

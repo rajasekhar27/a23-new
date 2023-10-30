@@ -1,0 +1,76 @@
+#menuOverlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+.header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #032146;
+    color: #fff;
+    width: 100vw;
+    position: fixed;
+    line-height: 14px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.desktop_menu ul li {
+    text-decoration: none;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.65rem;
+    content: "";
+    /* background: url(new_index_assets/images/angle-arrow-down.svg) no-repeat; */
+    background-size: 11px;
+    width: 11px;
+    height: 8px;
+    border: none;
+    vertical-align: unset;
+}
+
+.header-main .desktop_menu ul li.link-saperator {
+    position: relative;
+    padding: 0;
+    display: block;
+    height: unset;
+}
+
+.btn-login-signup {
+    width: auto;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn-bordered {
+    border: 1px solid;
+}
+
+.btn-bordered-green {
+    border-color: #42BE40!important;
+    color: #42BE40!important;
+}
+
+.btn {
+    outline: 0 !important;
+}
+
+.btn-login-signup span:after {
+    color: #42BE40;
+    content: '»';
+    position: absolute;
+    left: 0px;
+    animation-duration: .5s;
+    animation-name: move-aero;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move-aero{from{left:5px}to{left:18px}}

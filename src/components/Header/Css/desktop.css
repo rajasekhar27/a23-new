@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (device-width >= 992px){
+    
+}
+@layer components {
+    .header .szh-menu__item.customMenuItem a {
+        border-bottom: 1px solid #3A4C71;
+    }
+
+    .btn-login-signup .btn-bordered {
+        width: unset;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+    }
+    
+    .btn-login-signup .btn-bordered.inner-custom-lg {
+        gap: 6px;
+        border-radius: 6px;
+        height: 40px;
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        padding-right: 12px;
+        padding-left: 30px;
+    }
+
+    .header .app-signup-download-lg {
+        gap:24px;
+        height: 64px;
+        width:unset;
+        padding-left:unset;
+        padding-right:unset;
+    }
+
+    .header .download-links-icons {
+        gap: 24px;
+    }
+}
+/* } */

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (device-width <= 767px){
+
+
+}
+@layer components {
+    .header {
+        z-index: 2;
+        padding: 0;
+    }
+
+    .header .logo img {
+        width: 36px;
+        height: 26px;
+        aspect-ratio: 36/26;
+    }
+
+    .header .app-signup-download {
+        width: 100%;
+    }
+
+    .header .menu {
+        height: 100%;
+        align-items: center;
+        gap: 20px;
+        outline: 0;
+        width: auto;
+    }
+    
+    
+}
+/* } */

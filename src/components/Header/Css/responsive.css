@@ -1,0 +1,377 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    /*********************** header start ************************/
+    
+    .header-sm .app-signup-download {
+        padding: 14px 15px;
+    }
+
+    .header-md .app-signup-download {
+        padding: 16px 15px;
+    }
+
+    .header-sm-md .btn-login-signup span:after {
+        top: 8px;
+    }
+
+    .header-lg .btn-login-signup span:after {
+        top: 7px;
+    }
+
+    .header-md .menu_img {
+        width: 24px;
+        height: 20px;
+    }
+    
+    .header-md .a23-logo {
+        width: 47.077px;
+        height: 34px;
+    }
+
+    .header-sm .btn-login-signup .btn-bordered {
+        height: 32px;
+        font-size: 0.75rem;
+        padding: 7px 12px 8px 28px;
+        gap: 8px;
+        border-radius:4px;
+    }
+    
+    .header-md .btn-login-signup .btn-bordered {
+        gap: 8px;
+        font-size: 1rem;
+        line-height: 21.68px;
+        padding: 8px 15px 12px 28px;
+        height: 40px;
+        font-weight: 700;
+        border-radius: 6px;
+        width: 155px;
+    }
+
+    .leftmenu-sm-md {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: scroll;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        z-index: 4;
+        color: #fff;
+        background: linear-gradient(0deg,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),#032146;
+        border-radius: 0px;
+    }
+
+    .leftmenu-sm {
+        width: 80vw;
+    }
+
+    .leftmenu-md {
+        width: 52.083333vw;
+    }
+
+    .leftmenu-sm-md .navigations {
+        height:100vmax;
+    }
+
+    .leftmenu-sm-md .menu-content {
+        overflow: scroll;
+        height: 80vh;
+    }
+    
+    .leftmenu-sm .menu-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .leftmenu-sm-md .menu-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .leftmenu-sm .close-login-part {
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    .leftmenu-md .close-login-part {
+        padding-top:24px;
+        padding-bottom:24px;
+    }
+
+    .leftmenu-sm .menu-item {
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+
+    .leftmenu-md .menu-item {
+        padding-top:16px;
+        padding-bottom:16px;
+    }
+
+    .leftmenu-md #mobileMenuLogo {
+        width: 44.31px;
+        height: 32px;
+    }
+
+    .leftmenu-md .menu-close {
+        width:18px;
+        width:19px;
+    }
+
+    .leftmenu-sm-md .dropdown-menu.dropdown-menu-closed .menubutton::after {
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 27px;
+    }
+
+    .leftmenu-sm-md .dropdown-menu .menubutton::after {
+        content: '';
+        display: block;
+        height: 11px;
+        width: 12px;
+        position: absolute;
+        
+        right: 8px;
+        background: url(../../../../public/assets/images/header/angle-arrow-down.svg) no-repeat;
+    }
+
+    .leftmenu-sm-md .dropdown-menu .menubutton::after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        top: 21px;
+    }
+
+    .leftmenu-sm-md .menu-item:not(:nth-child(2)) {
+        border-top: 1px solid #3a4c7180;
+    }
+
+    .leftmenu-sm-md .menubutton .link-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .leftmenu-sm-md .menubutton .text {
+        padding: 6.5px;
+    }
+    
+    .leftmenu-sm .menubutton .text {
+        font-size: 0.875rem;
+    }
+    
+    .leftmenu-md .menubutton .text {
+        font-size: 1.25rem;
+    }
+
+    .leftmenu-sm-md .download-btn {    
+        left: 0;
+        right: 0;
+        bottom: 16px;
+        border-top: 2px solid #3a4c71;
+        padding-top: 16px;
+        background: linear-gradient(0deg,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),#032146;
+    }
+
+    .leftmenu-sm-md .dropdown-menu.dropdown-menu-closed .dropdown-list {
+        display: none;
+    }
+
+    .leftmenu-sm-md .dropdown-menu .dropdown-list a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 60px;
+        font-size: 0.75rem;
+        width:100%;
+    }
+
+    .leftmenu-sm-md .dropdown-menu .dropdown-list a .icon-solid-dot {
+        height: 8px;
+        width: 8px;
+        left: 42px;
+        top: 14px;
+        position: absolute;
+        background: #58B6C6;
+        border-radius: 50%;
+    }
+
+    .leftmenu-sm-md .download-btn {
+        left: 0;
+        right: 0;
+        bottom: 16px;
+        border-top: 2px solid #3a4c71;
+        padding-top: 16px;
+        background: linear-gradient(0deg,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),#032146;
+    }
+
+    .leftmenu-sm-md #A23GamesApp {
+        padding: 10px 0;
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: 600;
+        text-align: center;
+        border: 2px solid #52b16b;
+        border-radius: 7px;
+        width: 100%;
+        max-width: 235px;
+        font-size: 18px;
+        background: linear-gradient(180deg, #35A753 0%, #276E3A 100%);
+        color:#fff;
+        gap:5px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay {
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-out;
+        background-color: #04091c;
+        width: 100vw;
+        height:100vh;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .main-container {
+        position: absolute;
+        bottom: 16px;
+        left: 0;
+        right: 0;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .main-container .close-icon {
+        text-align: right;
+        width: 12px;
+        margin-left: auto;
+        margin-right: 3px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card {
+        background-color: #0c182e;
+        padding: 20px 10px;
+        border-radius: 14px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header {
+        display: flex;
+        justify-content: space-between;
+        background: unset;
+        position: unset;
+        height: unset;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .heading {
+        color: #fff;
+        font-weight: 600;
+        text-align: left;
+        font-size:16px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .disclaimer {
+        color: #e6bc68;
+        font-size: 11px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .timer {
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: relative;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .timer svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        transform: rotateY(-180deg) rotateZ(-90deg);
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .circle-1 svg circle,.download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .circle-2 svg circle{stroke-dasharray:60px;stroke-dashoffset:0;stroke-linecap:round;stroke-width:2px;fill:none}
+    
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .circle-1 svg circle {
+        stroke: #2a4e88;
+    }
+    
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .circle-2 svg circle{stroke:#39b54a}
+    
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .circle-1 svg circle, .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .circle-2 svg circle {
+        stroke-dasharray: 60px;
+        stroke-dashoffset: 0;
+        stroke-linecap: round;
+        stroke-width: 2px;
+        fill: none;
+    }
+
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .header .circle-2.animate svg circle{animation:7s linear forwards countdown}@keyframes countdown{to{stroke-dashoffset:113px;stroke-dashoffset:60px}from{stroke-dashoffset:0}}
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .body .btn-app-download {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #182a48;
+        border: 2px solid #14346c;
+        margin-top: 15px;
+        border-radius: 8px;
+        padding: 5px 10px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .body .btn-app-download .img-text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .body .btn-app-download .img-container {
+        width: 60px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .body .btn-app-download .title {
+        color: #e6bc68;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .body .btn-app-download .subtext {
+        color: #fff;
+        padding-top: 5px;
+        font-size: 10px;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .body .btn-app-download .icons {
+        width: 50px;
+        text-align: center;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .download-overlay-card .body .btn-app-download .icons img:last-child {
+        width: 90%;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay .main-container .close-icon {
+        text-align: right;
+        width: 12px;
+        margin-left: auto;
+        margin-right: 3px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .download-apps-overlay-sm-md#download-apps-overlay.active {
+        opacity: 1;
+        visibility: visible;
+        transition: .3s ease-in;
+    }
+
+    /*********************** header end ************************/
+}

@@ -1,0 +1,29 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .tourney-tab-group-md .tab-list{
+        max-width: 720px;
+    }
+    .tourney-tab-group-lg .tab-list{
+        max-width: 960px;
+    }
+    .tourney-tab-group-xl .tab-list{
+        max-width: 1140px;
+    }
+    .tourney-tab-group-md .tab-panel{
+        max-width: 720px;
+    }
+    .tourney-tab-group-lg .tab-panel{
+        max-width: 960px;
+    }
+    .tourney-tab-group-xl .tab-panel{
+        max-width: 1140px;
+    }
+    .tourney-tab-group-md .tab-title-style{
+        font-size: 1.125rem;
+        padding:16px;
+    }
+}

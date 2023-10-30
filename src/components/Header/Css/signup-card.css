@@ -1,0 +1,66 @@
+
+.my-login-card-container{
+    color: #9c9d9f;
+    background-color: rgba(8,13,26);
+    border-radius: 12px;
+    border: 3px solid #3a4c71;
+    padding-bottom: 25px;
+    width:310px;
+    position: relative;
+}
+
+
+/* sign up card animation css */
+.modal-content {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+
+.badge-container{
+  margin-top: -14%;
+  display:flex;
+  z-index: 10;
+  justify-content: center;
+}
+
+.mybtn {
+    height: 46px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width:100%;
+    margin-top:20px;
+  }
+.mybtn-success {
+    background-color: #2e8c47;
+    border: 1px solid #2e8c47;
+    color: #fff;
+    border-color: #0da335
+}
+
+
+/* request OTP animation css */
+#signupForm .success-glow {
+    animation: 60s linear infinite button-glow;
+    background: linear-gradient(121.19deg,#24a422 25.73%,#43bf48 45.27%,#24a422 62.27%),#000
+  }
+@keyframes button-glow {
+    0% {
+        background-position: -5000px 0
+    }
+    to {
+        background-position: 5000px 0
+    }
+  }
+  

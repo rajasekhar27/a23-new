@@ -59,7 +59,7 @@
         overflow: scroll;
         margin: 0;
         padding: 0;
-        height: 100dvh;
+        height: 100%;
         z-index: 4;
         color: #fff;
         background: linear-gradient(0deg,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),#032146;
@@ -75,12 +75,12 @@
     }
 
     .leftmenu-sm-md .navigations {
-        height:100vmax;
+        height:100dvh;
     }
 
     .leftmenu-sm-md .menu-content {
         overflow: scroll;
-        height: 80%;
+        height: 50%;
     }
     
     .leftmenu-sm .menu-content {

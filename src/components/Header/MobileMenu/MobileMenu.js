@@ -35,7 +35,7 @@ const MobileMenu = () => {
 
     return (
         <>
-            <div id="leftMenu" className="lg:hidden leftmenu sm:leftmenu-sm md:leftmenu-md sm-md:leftmenu-sm-md hidden" style={{height:windowHeight}}>
+            <div id="leftMenu" className="lg:hidden leftmenu sm:leftmenu-sm md:leftmenu-md sm-md:leftmenu-sm-md hidden" >
                 <nav className="relative navigations">
                     <div className="menu-content">
                         <ul>

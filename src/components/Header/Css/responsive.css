@@ -75,7 +75,7 @@
     }
 
     .leftmenu-sm-md .navigations {
-        height:100vmax;
+        height:100dvh;
     }
 
     .leftmenu-sm-md .menu-content {
@@ -225,6 +225,7 @@
         background: linear-gradient(180deg, #35A753 0%, #276E3A 100%);
         color:#fff;
         gap:5px;
+        display: flex;
         align-items: center;
     }
 
